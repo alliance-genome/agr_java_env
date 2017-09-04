@@ -1,4 +1,4 @@
-FROM agrdocker/agr_base_linux_env:develop
+FROM agrdocker/agr_base_linux_env:latest
 
 RUN apt-get install -y maven
 
