@@ -2,7 +2,7 @@ build: pull
 	docker build -t agrdocker/agr_java_env .
 
 push: build
-	docker push agrdocker/agr_java_env:latest
+	docker push agrdocker/agr_java_env
 
 pull:
 	docker pull agrdocker/agr_base_linux_env
