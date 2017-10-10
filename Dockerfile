@@ -1,18 +1,10 @@
-FROM agrdocker/agr_base_linux_env:develop
+FROM agrdocker/agr_base_linux_env:latest
 
-RUN apt-get install -y vim
-RUN apt-get install -y vim-common
-RUN apt-get install -y vim-runtime
-RUN apt-get install -y git
-RUN apt-get install -y wget
-RUN apt-get install -y make
 RUN apt-get install -y maven
 
 WORKDIR /workdir
 
-ADD java java
-
-RUN cat java/jdk-8u144-linux-x64.tar.gz.* > jdk-8u144-linux-x64.tar.gz
+RUN wget https://s3.amazonaws.com/agr-build-files/jdk-8u144-linux-x64.tar.gz
 RUN tar zxvf jdk-8u144-linux-x64.tar.gz
 RUN mv jdk1.8.0_144 /usr/java
 RUN update-alternatives --install /usr/bin/java java /usr/java/bin/java 2000
