@@ -1,4 +1,4 @@
-FROM gocd.alliancegenome.org:5000/agr_base_linux_env
+FROM agrdocker/agr_base_linux_env
 
 RUN apt-get install -y maven
 
