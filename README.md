@@ -1,3 +1,8 @@
+>**Note:**  
+>This archived repository is no longer actively used nor maintained.  
+>It was intended as a platform-specific repository to build a docker image for java (docker) application deployment,
+>but its functionality has been replaced by the more general [agr_base_linux_env repository](https://github.com/alliance-genome/agr_base_linux_env) due to inter-technology dependencies.
+
 # AGR Loader Environment Documentation
 
 This repo follows the HubFlow conventions for releasing the versions of the code as specified here: [HubFlow](https://datasift.github.io/gitflow/)
